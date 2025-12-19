@@ -3,24 +3,19 @@
 
 const jogos = [
   {
-    aluno: "Aluno 1",
-    jogo: "Frogger Clone",
-    thumb: "assets/thumbs/aluno1.png",
-    url: "https://exemplo.com/aluno1/",
-    descricao: "Clone do Frogger com movimentação por setas e colisões."
+    aluno: "DeadPerquim",
+    jogo: "Space Invaders Clone",
+    thumb: "assets/thumbs/DeadPerquim.png",
+    url: "https://ifsc-arliones.github.io/projeto-jogo-web-DeadPerquim/",
+    descricao: "Este projeto é uma recriação do clássico jogo Space Invaders (estilo Atari 2600), desenvolvido utilizando tecnologias web modernas (HTML, CSS e JavaScript)."
   },
+
   {
-    aluno: "Aluno 2",
-    jogo: "Breakout Clone",
-    thumb: "assets/thumbs/aluno2.png",
-    url: "https://exemplo.com/aluno2/",
-    descricao: "Breakout com blocos e variação de velocidade."
+    aluno: "enzobarbi",
+    jogo: "Space Invaders Clone",
+    thumb: "assets/thumbs/enzobarbi.png",
+    url: "https://ifsc-arliones.github.io/projeto-jogo-web-enzobarbi/",
+    descricao: ""
   },
-  {
-    aluno: "Aluno 3",
-    jogo: "Pong Clone",
-    thumb: "assets/thumbs/aluno3.png",
-    url: "https://exemplo.com/aluno3/",
-    descricao: "Pong com placar e IA simples."
-  }
+
 ];
