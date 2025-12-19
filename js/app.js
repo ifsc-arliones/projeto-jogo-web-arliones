@@ -1,28 +1,7 @@
-// 1) EDITE AQUI: um item por aluno/jogo
-//    url = link EXTERNO (cada jogo hospedado em outro lugar)
-const slides = [
-  {
-    aluno: "Aluno 1",
-    jogo: "Frogger Clone",
-    thumb: "assets/thumbs/aluno1.png",
-    url: "https://exemplo.com/aluno1/",
-    descricao: "Clone do Frogger com movimentação por setas e colisões."
-  },
-  {
-    aluno: "Aluno 2",
-    jogo: "Breakout Clone",
-    thumb: "assets/thumbs/aluno2.png",
-    url: "https://exemplo.com/aluno2/",
-    descricao: "Breakout com blocos e variação de velocidade."
-  },
-  {
-    aluno: "Aluno 3",
-    jogo: "Pong Clone",
-    thumb: "assets/thumbs/aluno3.png",
-    url: "https://exemplo.com/aluno3/",
-    descricao: "Pong com placar e IA simples."
-  }
-];
+// Verificação defensiva (ajuda na manutenção futura)
+if (typeof jogos === "undefined" || !Array.isArray(jogos)) {
+  throw new Error("Lista de jogos não encontrada. Verifique js/data.js");
+}
 
 // Estado do carrossel
 let index = 0;
@@ -44,7 +23,7 @@ function escapeHtml(str) {
 
 function renderDots() {
   dotsEl.innerHTML = "";
-  slides.forEach((_, i) => {
+  jogos.forEach((_, i) => {
     const b = document.createElement("button");
     b.className = "dot";
     b.type = "button";
@@ -56,18 +35,17 @@ function renderDots() {
 }
 
 function renderSlide() {
-  const s = slides[index];
+  const j = jogos[index];
 
-  // Segurança + UX: link externo abre em nova aba
-  // rel="noopener noreferrer" evita que a aba aberta tenha acesso a window.opener
   slideEl.innerHTML = `
     <a class="shot"
-       href="${s.url}"
+       href="${j.url}"
        target="_blank"
        rel="noopener noreferrer"
-       aria-label="Abrir jogo externo de ${escapeHtml(s.aluno)}: ${escapeHtml(s.jogo)}">
+       aria-label="Abrir jogo externo de ${escapeHtml(j.aluno)}: ${escapeHtml(j.jogo)}">
 
-      <img src="${s.thumb}" alt="Tela inicial do jogo ${escapeHtml(s.jogo)} - ${escapeHtml(s.aluno)}">
+      <img src="${j.thumb}"
+           alt="Tela inicial do jogo ${escapeHtml(j.jogo)} - ${escapeHtml(j.aluno)}">
 
       <div class="overlay">
         <span class="playpill">↗ Abrir jogo (link externo)</span>
@@ -75,23 +53,28 @@ function renderSlide() {
     </a>
 
     <div class="meta">
-      <h2>${escapeHtml(s.jogo)}</h2>
-      <p><strong>${escapeHtml(s.aluno)}</strong></p>
-      <p>${escapeHtml(s.descricao ?? "")}</p>
+      <h2>${escapeHtml(j.jogo)}</h2>
+      <p><strong>${escapeHtml(j.aluno)}</strong></p>
+      <p>${escapeHtml(j.descricao ?? "")}</p>
 
       <div class="actions">
-        <a class="btn" href="${s.url}" target="_blank" rel="noopener noreferrer">↗ Jogar</a>
-        <a class="btn" href="${s.thumb}" target="_blank" rel="noopener noreferrer">🖼️ Ver imagem</a>
+        <a class="btn" href="${j.url}" target="_blank" rel="noopener noreferrer">
+          ↗ Jogar
+        </a>
+        <a class="btn" href="${j.thumb}" target="_blank" rel="noopener noreferrer">
+          🖼️ Ver imagem
+        </a>
       </div>
     </div>
   `;
 
-  // atualiza dots
-  [...dotsEl.children].forEach((d, i) => d.setAttribute("aria-current", String(i === index)));
+  [...dotsEl.children].forEach((d, i) =>
+    d.setAttribute("aria-current", String(i === index))
+  );
 }
 
 function goTo(i) {
-  index = (i + slides.length) % slides.length;
+  index = (i + jogos.length) % jogos.length;
   renderSlide();
 }
 
