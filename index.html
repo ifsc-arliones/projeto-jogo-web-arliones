@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeria de Jogos — FE1</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="top">
+      <h1 class="title">Galeria de jogos — Programação Frontend I</h1>
+      <p class="hint">Use ← → no teclado · Clique na imagem para abrir o jogo</p>
+    </header>
+
+    <main>
+      <section class="carousel" aria-label="Carrossel de jogos">
+        <div class="stage">
+          <button class="navbtn" id="prevBtn" type="button" aria-label="Anterior">‹</button>
+
+          <div class="viewport">
+            <div class="slide" id="slide">
+              <!-- preenchido via JS -->
+            </div>
+          </div>
+
+          <button class="navbtn" id="nextBtn" type="button" aria-label="Próximo">›</button>
+        </div>
+
+        <div class="dots" id="dots" aria-label="Indicadores do carrossel">
+          <!-- preenchido via JS -->
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Dica: mantenha as thumbs em 16:9 (ex.: 1280×720) para ficar consistente.</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
