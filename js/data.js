@@ -51,6 +51,14 @@ const jogos = [
   },
 
   {
+    aluno: "Enzo Fagundes Barbi",
+    jogo: "Frogger-Style Game",
+    thumb: "assets/thumbs/enzobarbi.png",
+    url: "https://ifsc-arliones.github.io/projeto-jogo-web-enzobarbi/",
+    descricao: "Jogo inspirado no clássico Frogger, desenvolvido com HTML, CSS e JavaScript puro."
+  },
+
+  {
     aluno: "Kaleu Borges Augusto",
     jogo: "Frogger-Style Game",
     thumb: "assets/thumbs/kaleu-b.png",
@@ -73,13 +81,5 @@ const jogos = [
     url: "https://ifsc-arliones.github.io/projeto-jogo-web-Gelson-jr/",
     descricao: "Frogger-Style Game"
   },
-
-  // {
-  //   aluno: "enzobarbi",
-  //   jogo: "Frogger-Style Game",
-  //   thumb: "assets/thumbs/enzobarbi.png",
-  //   url: "https://ifsc-arliones.github.io/projeto-jogo-web-enzobarbi/",
-  //   descricao: ""
-  // },
 
 ];
