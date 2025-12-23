@@ -11,14 +11,6 @@ const jogos = [
   },
 
   {
-    aluno: "Gelson Oliveira Araújo Júnior",
-    jogo: "Frogger-Style Game",
-    thumb: "assets/thumbs/Gelson-jr.png",
-    url: "https://ifsc-arliones.github.io/projeto-jogo-web-Gelson-jr/",
-    descricao: "Frogger-Style Game"
-  },
-
-  {
     aluno: "Gustavo Ribeiro",
     jogo: "Pong",
     thumb: "assets/thumbs/GusTav-DeV22.png",
@@ -27,18 +19,34 @@ const jogos = [
   },
 
   {
+    aluno: "Lucas Luiz Guesser",
+    jogo: "Frogger",
+    thumb: "assets/thumbs/lucasluizg.png",
+    url: "https://ifsc-arliones.github.io/projeto-jogo-web-lucasluizg/",
+    descricao: "Frogger"
+  },
+
+  {
+    aluno: "Nicolas Franzosi dos Santos",
+    jogo: "Space Invaders Clone",
+    thumb: "assets/thumbs/NickGamereses.png",
+    url: "https://ifsc-arliones.github.io/projeto-jogo-web-NickGamereses/",
+    descricao: "Este é um projeto de jogo estilo \"Space Invaders\" desenvolvido como parte de um trabalho acadêmico de Frontend. O jogo foi construído utilizando apenas HTML, CSS e JavaScript puro, sem frameworks externos."
+  },
+
+  {
+    aluno: "Marcos Júnior Lemes Ferreira",
+    jogo: "Frogger-Style Game",
+    thumb: "assets/thumbs/marcos-j-lemes.png",
+    url: "https://ifsc-arliones.github.io/projeto-jogo-web-marcos-j-lemes/",
+    descricao: "Desenvolvido em HTML, CSS e JavaScript, utilizando DOM e Grid para representar o mapa. O objetivo é atravessar o rio usando balsas e evitar carros até alcançar a área segura no topo."
+  },
+
+  {
     aluno: "Gustavo Goedert Cordova",
     jogo: "Frogger-Style Game",
     thumb: "assets/thumbs/gustavo-cordova.png",
     url: "https://ifsc-arliones.github.io/projeto-jogo-web-gustavo-cordova/",
-    descricao: "Frogger-Style Game"
-  },
-
-  {
-    aluno: "Juliano Tavares da Silva",
-    jogo: "Frogger-Style Game",
-    thumb: "assets/thumbs/JulianoTavaresDaSilva.png",
-    url: "https://ifsc-arliones.github.io/projeto-jogo-web-JulianoTavaresDaSilva/",
     descricao: "Frogger-Style Game"
   },
 
@@ -51,27 +59,19 @@ const jogos = [
   },
 
   {
-    aluno: "Lucas Luiz Guesser",
-    jogo: "Frogger",
-    thumb: "assets/thumbs/lucasluizg.png",
-    url: "https://ifsc-arliones.github.io/projeto-jogo-web-lucasluizg/",
-    descricao: "Frogger"
-  },
-
-  {
-    aluno: "Marcos Júnior Lemes Ferreira",
+    aluno: "Juliano Tavares da Silva",
     jogo: "Frogger-Style Game",
-    thumb: "assets/thumbs/marcos-j-lemes.png",
-    url: "https://ifsc-arliones.github.io/projeto-jogo-web-marcos-j-lemes/",
-    descricao: "Desenvolvido em HTML, CSS e JavaScript, utilizando DOM e Grid para representar o mapa. O objetivo é atravessar o rio usando balsas e evitar carros até alcançar a área segura no topo."
+    thumb: "assets/thumbs/JulianoTavaresDaSilva.png",
+    url: "https://ifsc-arliones.github.io/projeto-jogo-web-JulianoTavaresDaSilva/",
+    descricao: "Frogger-Style Game"
   },
 
   {
-    aluno: "Nicolas Franzosi dos Santos",
-    jogo: "Space Invaders Clone",
-    thumb: "assets/thumbs/NickGamereses.png",
-    url: "https://ifsc-arliones.github.io/projeto-jogo-web-NickGamereses/",
-    descricao: "Este é um projeto de jogo estilo \"Space Invaders\" desenvolvido como parte de um trabalho acadêmico de Frontend. O jogo foi construído utilizando apenas HTML, CSS e JavaScript puro, sem frameworks externos."
+    aluno: "Gelson Oliveira Araújo Júnior",
+    jogo: "Frogger-Style Game",
+    thumb: "assets/thumbs/Gelson-jr.png",
+    url: "https://ifsc-arliones.github.io/projeto-jogo-web-Gelson-jr/",
+    descricao: "Frogger-Style Game"
   },
 
   // {
