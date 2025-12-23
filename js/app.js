@@ -54,7 +54,7 @@ function renderSlide() {
 
     <div class="meta">
       <h2>${escapeHtml(j.jogo)}</h2>
-      <p><strong>${escapeHtml(j.aluno)}</strong></p>
+      <p><strong>Aluno: ${escapeHtml(j.aluno)}</strong></p>
       <p>${escapeHtml(j.descricao ?? "")}</p>
 
       <div class="actions">
