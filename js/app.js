@@ -6,6 +6,9 @@ if (typeof jogos === "undefined" || !Array.isArray(jogos)) {
 // Estado do carrossel
 let index = 0;
 
+var nextIntervalTime = 4000; // Tempo em milissegundos para troca automática
+var nextTimeoutId = setInterval(next, nextIntervalTime); // Troca automática de slides
+
 // Elementos do DOM
 const slideEl = document.getElementById("slide");
 const dotsEl = document.getElementById("dots");
@@ -74,8 +77,10 @@ function renderSlide() {
 }
 
 function goTo(i) {
+  clearInterval(nextTimeoutId);
   index = (i + jogos.length) % jogos.length;
   renderSlide();
+  nextTimeoutId = setInterval(next, nextIntervalTime);
 }
 
 function next() { goTo(index + 1); }
@@ -93,5 +98,3 @@ window.addEventListener("keydown", (e) => {
 // Inicialização
 renderDots();
 renderSlide();
-
-setInterval(next, 3000); // Troca automática a cada 10 segundos
