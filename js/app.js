@@ -93,3 +93,5 @@ window.addEventListener("keydown", (e) => {
 // Inicialização
 renderDots();
 renderSlide();
+
+setInterval(next, 3000); // Troca automática a cada 10 segundos
